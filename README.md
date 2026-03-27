@@ -49,7 +49,7 @@ The output signal ( y[n] ) is obtained by convolution:
 
 <br>
 
-![Diagram](assets/LTI_System_block_diagram.png)
+![Diagram](assets/LTI-System-block-diagram.png)
 
 ---
 
@@ -123,25 +123,25 @@ python3 audio_noise_filtering.py
 ## Results
 
 ### Time-domain plots:
-![Diagram](assets/time_domain_clean_vs_noisy.png)
+![Diagram](assets/time-domain-clean-vs-noisy.png)
 
 - The noisy signal has the same overall shape as the clean signal, but there is a large increase in amplitude across the sample.
 
 <br>
 
-![Diagarm](assets/time_domain_clean_vs_filtered.png)
+![Diagarm](assets/time-domain-clean-vs-filtered.png)
 
 - The noisy signal has the same overall shape as the clean signal, compared to the noisy signal, it has a much lower amplitude but still not the same as the clean signal
 
 
 
 ### Frequency-domain plots:
-![Diagram](assets/frequency_domain_clean_vs_noisy.png)
+![Diagram](assets/frequency-domain-clean-vs-noisy.png)
 
 - The original linear plots looked identical so I had to convert it to a logarithmic scale in order to really even see the difference. The Noisy signal has a larger span of magnitudes than the clean signal and it also remains so across higher frequencies.
 
 <br>
 
-![Diagram](assets/frequency_domain_clean_vs_filtered.png)
+![Diagram](assets/frequency-domain-clean-vs-filtered.png)
 
 - The original linear plots looked identical so I had to convert it to a logarithmic scale in order to really even see the difference. The filtered signal seems to match the same span as the clean signal in terms of magnitudes, but it introduces this new phenomena of the moving average filter's zeros. Essentially certain frequencies cancel out, mimicking a sinusoidal wave.
